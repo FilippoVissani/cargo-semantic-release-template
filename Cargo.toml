@@ -1,0 +1,12 @@
+[package]
+name = "cargo_semantic_release_template"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Template for Cargo projects using semantic-release"
+homepage = "https://github.com/FilippoVissani/cargo-semantic-release-template"
+documentation = "https://github.com/FilippoVissani/cargo-semantic-release-template"
+repository = "https://github.com/FilippoVissani/cargo-semantic-release-template"
+readme = "README.md"
+
+[dependencies]

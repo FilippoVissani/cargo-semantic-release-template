@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@semantic-release-cargo/semantic-release-cargo": "2.1.76",
+    "semantic-release-preconfigured-conventional-commits": "1.1.25"
+  },
+  "engines": {
+    "node": "18.16"
+  }
+}
