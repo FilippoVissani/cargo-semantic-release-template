@@ -1,3 +1,12 @@
+## [1.1.2](https://github.com/FilippoVissani/cargo-semantic-release-template/compare/1.1.1...1.1.2) (2023-05-04)
+
+
+### Bug Fixes
+
+* fix Semantic release ([d2a4ecf](https://github.com/FilippoVissani/cargo-semantic-release-template/commit/d2a4ecfa9bf2e0cbd4746696c28985d837499133))
+* fix Semantic release ([0561170](https://github.com/FilippoVissani/cargo-semantic-release-template/commit/0561170ffe35082638c83850f253ecb638501693))
+* fix Semantic release ([6d19204](https://github.com/FilippoVissani/cargo-semantic-release-template/commit/6d192044e9f1882ad80defc80693d71c585605ef))
+
 ## [1.1.1](https://github.com/FilippoVissani/cargo-semantic-release-template/compare/1.1.0...1.1.1) (2023-05-04)
 
 
