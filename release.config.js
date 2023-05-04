@@ -22,6 +22,5 @@ config.plugins.push(
         "assets": ["CHANGELOG.md", "package.json"],
         "message": "chore(release)!: [skip ci] ${nextRelease.version} released"
     }],
-    ["@semantic-release-cargo/semantic-release-cargo"],
 )
 module.exports = config
