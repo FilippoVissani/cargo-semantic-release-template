@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/FilippoVissani/cargo-semantic-release-template/compare/1.0.0...1.1.0) (2023-05-04)
+
+
+### Features
+
+* add div function ([b860e60](https://github.com/FilippoVissani/cargo-semantic-release-template/commit/b860e600ea1a43b0bb47e81b8f9a2ef223338e56))
+
 ## 1.0.0 (2023-05-04)
 
 
