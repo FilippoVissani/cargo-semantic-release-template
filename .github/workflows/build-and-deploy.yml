@@ -39,6 +39,13 @@ jobs:
           submodules: recursive
           fetch-depth: 0
           token: ${{ secrets.GH_ACCESS_TOKEN }}
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@master
+        id: rust-toolchain
+        with:
+          toolchain: stable
+
       - name: Release
         env:
           GH_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
