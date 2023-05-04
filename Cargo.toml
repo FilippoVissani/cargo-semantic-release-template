@@ -1,5 +1,5 @@
 [package]
-name = "cargo_semantic_release_template"
+name = "cargo-semantic-release-template"
 version = "0.1.0"
 edition = "2021"
 license = "Apache-2.0"
