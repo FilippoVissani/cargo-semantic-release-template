@@ -19,5 +19,4 @@ mod tests {
     fn test_div() {
         assert_eq!(div(4, 2), 2);
     }
-
 }
