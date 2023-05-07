@@ -50,21 +50,33 @@ jobs:
       group: test-release-${{ github.event.number || github.ref }}
       cancel-in-progress: true
     steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v3
-        with:
-          submodules: recursive
-          fetch-depth: 0
+      steps:
+        - name: Checkout the repository
+          uses: actions/checkout@v3
+          with:
+            submodules: recursive
+            fetch-depth: 0
+            token: ${{ secrets.GH_ACCESS_TOKEN }}
 
-      - name: Deploy
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          override: true
+        - name: Install Rust toolchain
+          uses: dtolnay/rust-toolchain@master
+          id: rust-toolchain
+          with:
+            toolchain: stable
 
-      - uses: katyo/publish-crates@v2
-        with:
-          dry-run: true
+        - name: Login on crates.io
+          uses: actions-rs/cargo@v1
+          with:
+            command: login
+            args: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+
+        - name: Release
+          env:
+            GH_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
+            NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          run: |
+            npm install
+            npx semantic-release --dry-run
 
   release:
     if: github.event_name == 'push'
