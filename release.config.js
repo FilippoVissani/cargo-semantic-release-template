@@ -1,6 +1,6 @@
 const config = require('semantic-release-preconfigured-conventional-commits')
 const prepareCommands = `
-sed -i 's/version = "\${lastRelease.version}"/version = "\${nextRelease.version}"/' Cargo.toml || exit 1
+sed -i 's/version.*/version = "\${nextRelease.version}"/g' Cargo.toml || exit 1
 git add -A || exit 2
 git commit -m "chore(release)!: [skip ci] \${nextRelease.version} released" || exit 3
 git push --force origin || exit 4
