@@ -1,5 +1,5 @@
 const config = require('semantic-release-preconfigured-conventional-commits')
-const verifyConditionsCommands = `
+const verifyReleaseCommands = `
 sed -i 's/version.*/version = "\${nextRelease.version}"/g' Cargo.toml || exit 1
 git add -A || exit 2
 git commit -m "chore(release)!: [skip ci] \${nextRelease.version} released" || exit 3
@@ -23,7 +23,7 @@ config.plugins.push(
     ["@semantic-release/exec", {
         "prepareCmd": prepareCommands,
         "publishCmd": publishCommands,
-        "verifyConditionsCmd": verifyConditionsCommands,
+        "verifyReleaseCmd": verifyReleaseCommands,
     }],
     ["@semantic-release/github", {
         "assets": [
