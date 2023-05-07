@@ -23,6 +23,7 @@ config.plugins.push(
     ["@semantic-release/exec", {
         "prepareCmd": prepareCommands,
         "publishCmd": publishCommands,
+        "verifyConditionsCmd": verifyConditionsCommands,
     }],
     ["@semantic-release/github", {
         "assets": [
