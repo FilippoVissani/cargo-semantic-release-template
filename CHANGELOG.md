@@ -1,3 +1,15 @@
+## [1.7.0](https://github.com/FilippoVissani/cargo-semantic-release-template/compare/1.6.0...1.7.0) (2023-05-07)
+
+
+### Features
+
+* Semantic release ([a31880e](https://github.com/FilippoVissani/cargo-semantic-release-template/commit/a31880ed24d39a1c331ca0ea9fbf20e42c787b77))
+
+
+### General maintenance
+
+* update version in Cargo.toml ([a67403c](https://github.com/FilippoVissani/cargo-semantic-release-template/commit/a67403c48912ad70f8acd43ad8127b230a2e78a2))
+
 ## [1.6.0](https://github.com/FilippoVissani/cargo-semantic-release-template/compare/1.5.0...1.6.0) (2023-05-07)
 
 
