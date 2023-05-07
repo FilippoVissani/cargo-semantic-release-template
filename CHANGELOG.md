@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/FilippoVissani/cargo-semantic-release-template/compare/1.2.0...1.3.0) (2023-05-07)
+
+
+### Features
+
+* Semantic release ([4b819a7](https://github.com/FilippoVissani/cargo-semantic-release-template/commit/4b819a7d41a36ff141043a4397a6983dc9258216))
+
 ## [1.2.0](https://github.com/FilippoVissani/cargo-semantic-release-template/compare/1.1.8...1.2.0) (2023-05-07)
 
 
