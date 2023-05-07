@@ -2,7 +2,6 @@ const config = require('semantic-release-preconfigured-conventional-commits')
 const publishCommands = `
 sed -i 's/version = "\${lastRelease.version}"/version = "\${nextRelease.version}"/' Cargo.toml || exit 1
 git add -A || exit 2
-git commit -m "chore: update version in Cargo.toml" || exit 3
 git tag -a -f \${nextRelease.version} \${nextRelease.version} -F CHANGELOG.md || exit 4
 git push --force origin \${nextRelease.version} || exit 5
 cargo package || exit 6
